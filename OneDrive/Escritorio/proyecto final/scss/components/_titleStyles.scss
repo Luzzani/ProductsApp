@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixin";
+@import "mapColors";
+
+
+.heroImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hotele-reception.jpg");
+    @include bgImg;
+}
+
+.heroImgG {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/heroIMG-galery.jpg");
+    @include bgImg;
+}
+
+.heroImgR {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/heroimgAloja.jpg");
+    @include bgImg;
+}
+
+.heroImgIndex {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/indexim.jpg");
+    @include bgImg;
+}
+
+.heroText {
+    p {
+        font-size: 2vw ;
+    }
+    h1 {
+    font-size: 5vw;
+    }
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+@media screen and (max-width: 600px) {
+    .heroText {
+        p {
+            font-size: 3vw;
+        }
+        h1 {
+            font-size: 10vw;
+        }
+    }
+}
+
+
+

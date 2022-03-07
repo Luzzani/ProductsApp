@@ -1,0 +1,41 @@
+@import "components/navBar";
+@import "components/variables";
+@import "components/titleStyles";
+@import "components/mapColors";
+@import "components/form";
+@import "components/footer";
+
+
+.space {
+    margin-top: 2rem;
+}
+// rooms
+.transform {
+    transition: transform .2s ease-in-out;
+    &:hover {
+    transform: scale(1, 1.1);
+    }
+}
+// index
+
+.textIndex {
+    font-size: $fontNav;
+    font-family: 'rubik', Times, serif;
+}
+
+@media screen and (max-width: 1199px) {
+    .textIndex {
+        font-size: 1rem;
+    }
+    .zoomImg {
+        transition: all 3s;
+        &:hover {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.bgGradient {
+    background-image: linear-gradient(rgba(0, 251, 251, .2), rgb(255, 255, 255));
+}

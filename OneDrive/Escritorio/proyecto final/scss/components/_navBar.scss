@@ -1,0 +1,38 @@
+@import "variables";
+@import "mapColors";
+
+.logoNav {
+    color: map-get($map: $colors, $key: colorNAv );
+    font-size: 2rem;
+    font-family: 'Comforter Brush', cursive;
+}
+
+.widthNav {
+    width: 30%;
+    font-size: $fontNav;
+} 
+
+.formNav {
+    width: 20vw;
+    .buttonSearch {
+        font-size: $fontNav;
+    }
+}
+
+@media screen and (max-width:"991px") {
+    .formNav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:"1604px") {
+    .widthNav {
+        width: 40%;
+    } 
+}
+
+@media screen and (max-width:"1226px") {
+    .widthNav {
+        width: 50%;
+    } 
+}
